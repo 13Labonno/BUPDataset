@@ -1,0 +1,316 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "text": ["hi", "hello", "hey", "good morning", "good afternoon", "good evening", "what's up", "how are you", "yo"],
+      "responses": ["Hello! How can I assist you with BUP info today?", "Hi there! What would you like to know about BUP?"]
+    },
+    {
+      "intent": "thanks",
+      "text": ["thanks", "thank you", "much appreciated", "thank you so much", "thx"],
+      "responses": ["You're welcome!", "Happy to help!"]
+    },
+    {
+      "intent": "goodbye",
+      "text": ["bye", "goodbye", "see you", "talk later", "later", "gotta go"],
+      "responses": ["Goodbye! Feel free to ask anytime.", "See you! If you need more info about BUP, just ask."]
+    },
+    {
+      "intent": "unknown",
+      "text": [],
+      "responses": ["Sorry, I didn't understand that. Could you please re-phrase?", "I’m not sure how to answer that. What specifically about BUP would you like to know?"]
+    },
+    {
+      "intent": "about_history",
+      "text": ["when was BUP established", "history of BUP", "founding year of BUP", "how old is BUP"],
+      "responses": ["BUP was established on 05 June 2008 as the 31st public university of Bangladesh. :contentReference[oaicite:1]{index=1}", "The history: BUP came into being on 05 June 2008 under the Bangladesh University of Professionals Act, 2009. :contentReference[oaicite:2]{index=2}"]
+    },
+    {
+      "intent": "vision_mission",
+      "text": ["BUP vision", "BUP mission", "what is BUP motto", "core values of BUP"],
+      "responses": ["Vision: “To develop the civil and military human capital through advanced education and research with a global perspective.” :contentReference[oaicite:3]{index=3}", "Motto: Excellence Through Knowledge. :contentReference[oaicite:4]{index=4}"]
+    },
+    {
+      "intent": "faculties",
+      "text": ["what faculties are there", "list the faculties of BUP", "which faculties does BUP have", "faculties at BUP"],
+      "responses": ["BUP has faculties including: Faculty of Business Studies (FBS), Faculty of Arts & Social Sciences (FASS), Faculty of Science & Technology (FST), Faculty of Security & Strategic Studies (FSSS), Faculty of Medical Studies (FMS). :contentReference[oaicite:5]{index=5}", "Here are some faculties: Business Studies, Arts & Social Sciences, Science & Technology, Security & Strategic Studies, Medical Studies. Want one faculty’s departments listed?"]
+    },
+    {
+      "intent": "departments_by_faculty",
+      "text": ["departments under Business Studies", "departments in FASS", "which departments are in science & technology faculty", "departments of Security & Strategic Studies", "list departments BUP"],
+      "responses": ["Under the Faculty of Business Studies you’ll find departments like: Business Administration – General; Accounting & Information Systems; Finance & Banking; Marketing; Management Studies. :contentReference[oaicite:6]{index=6}", "Under the Faculty of Arts & Social Sciences you’ll find departments such as: Economics, English, Development Studies, Public Administration, Sociology & Disaster Management & Resilience. :contentReference[oaicite:7]{index=7}"]
+    },
+    {
+      "intent": "programs_undergraduate",
+      "text": ["what undergraduate programs are offered", "undergraduate majors at BUP", "bachelor programs BUP", "which bachelor courses are available"],
+      "responses": ["BUP offers undergraduate programs like BBA in Accounting & Information Systems, BBA in Finance & Banking, BA (Hons) in English, BSS (Hons) in Development Studies, BSc in Computer Science & Engineering. :contentReference[oaicite:8]{index=8}", "Tell me the faculty and I’ll list its bachelor programs specifically."]
+    },
+    {
+      "intent": "programs_postgraduate",
+      "text": ["what masters programs are offered", "postgraduate courses at BUP", "which masters degrees BUP has", "graduate programs BUP"],
+      "responses": ["At the postgraduate level BUP has programs like MBA (various specialisations), Master of Social Science in Development Studies, Master in Disaster & Human Security Management, MSc in Environmental Science & Management. :contentReference[oaicite:9]{index=9}", "Would you like a list of masters programs in one faculty (say Business Studies or Science & Technology)?"]
+    },
+    {
+      "intent": "admission_requirements_ug",
+      "text": ["undergraduate admission requirements", "how to apply for bachelor at BUP", "eligibility for undergraduate BUP", "UG admission BUP requirements"],
+      "responses": ["For undergraduate admission you’ll normally need HSC or equivalent. Eligibility varies by program – check the official admission circular. :contentReference[oaicite:10]{index=10}", "Would you like UG admission requirements for a specific department or faculty?"]
+    },
+    {
+      "intent": "admission_requirements_pg",
+      "text": ["postgraduate admission requirements", "how to apply for masters at BUP", "eligibility for PG BUP", "graduate admission BUP requirements"],
+      "responses": ["For postgraduate programs you normally need a relevant bachelor’s degree, minimum CGPA/marks vary by department. Check the official site for the exact criteria.", "Would you like PG admission requirement for a particular program?"]
+    },
+    {
+      "intent": "fees_general",
+      "text": ["what are the fees", "tuition fees BUP", "how much does it cost", "fees for programs BUP"],
+      "responses": ["Fees vary by program and by whether you’re domestic or international. For example, first year tuition for international students around USD 2,200. :contentReference[oaicite:11]{index=11}", "Would you like the estimated fee for a specific bachelor or master program?"]
+    },
+    {
+      "intent": "fees_domestic",
+      "text": ["domestic student fees BUP", "local student tuition BUP", "how much do Bangladeshi students pay"],
+      "responses": ["Fees for domestic students vary per program and session; check the admissions circular for the exact figure.", "Would you like fees for a particular undergraduate program for domestic students?"]
+    },
+    {
+      "intent": "fees_international",
+      "text": ["international student fees BUP", "foreign student cost BUP", "cost for overseas students BUP"],
+      "responses": ["International students’ fees are higher; for some programs the first year is estimated around USD 2,200. :contentReference[oaicite:12]{index=12}", "Would you like the exact fee for a program in USD or BDT?"]
+    },
+    {
+      "intent": "contact_details",
+      "text": ["contact details of BUP", "how to contact BUP", "address of BUP", "phone number BUP", "email BUP"],
+      "responses": ["BUP is located at Mirpur Cantonment, Dhaka, Bangladesh. Check official website for latest contact info. :contentReference[oaicite:13]{index=13}", "Would you like the contact info for a specific office (Admissions, Finance, etc.)?"]
+    },
+    {
+      "intent": "campus_location",
+      "text": ["where is BUP campus", "campus location of BUP", "BUP address Dhaka", "where is BUP"],
+      "responses": ["The main campus of BUP is in Mirpur Cantonment, Dhaka, Bangladesh. :contentReference[oaicite:14]{index=14}", "Do you mean the main campus or one of its affiliated institutes?"]
+    },
+    {
+      "intent": "administration_leadership",
+      "text": ["who is the vice chancellor of BUP", "leadership of BUP", "dean list BUP", "who runs BUP"],
+      "responses": ["The Vice Chancellor of BUP is Major General Md Mahbub-ul Alam. :contentReference[oaicite:15]{index=15}", "Would you like names of Pro-VC, Treasurer or Registrar too?"]
+    },
+    {
+      "intent": "academic_bodies",
+      "text": ["what are the academic councils of BUP", "syndicate BUP", "board of governors BUP", "senate BUP"],
+      "responses": ["Regulatory bodies at BUP include Senate, Syndicate, Academic Council and Finance Committee. :contentReference[oaicite:16]{index=16}", "Would you like to know the role of one of these bodies?"]
+    },
+    {
+      "intent": "ranking_recognition",
+      "text": ["ranking of BUP", "is BUP recognised by UGC", "accreditation BUP"],
+      "responses": ["BUP is accredited by the University Grants Commission of Bangladesh. :contentReference[oaicite:17]{index=17}", "Would you like recent ranking data for BUP?"]
+    },
+    {
+      "intent": "research_centres",
+      "text": ["research centres at BUP", "BUP research centre", "where can I do research at BUP"],
+      "responses": ["BUP has a Centre for Higher Studies & Research (CHSR). :contentReference[oaicite:18]{index=18}", "Would you like information about ongoing research projects or journals?"]
+    },
+    {
+      "intent": "interntional_affiliates",
+      "text": ["affiliated institutes of BUP", "institutes under BUP affiliation", "which colleges are affiliated with BUP"],
+      "responses": ["BUP has many affiliated institutes across the country – around 56. :contentReference[oaicite:19]{index=19}", "Would you like a list of some of the affiliated institutes?"]
+    },
+    {
+      "intent": "library_facilities",
+      "text": ["library BUP", "library facilities at BUP", "what library services BUP has"],
+      "responses": ["BUP provides library & archive facilities with access to online journals and resources. :contentReference[oaicite:20]{index=20}", "Would you like details about borrowing policy, opening hours or digital access?"]
+    },
+    {
+      "intent": "hostel_facilities",
+      "text": ["hostel BUP", "student hall BUP", "accommodation at BUP", "where do students stay"],
+      "responses": ["Hostel and residential facilities are available though capacity and details vary. :contentReference[oaicite:21]{index=21}", "Do you want details about in-campus halls, rent, or off-campus accommodation?"]
+    },
+    {
+      "intent": "transport_facilities",
+      "text": ["transport at BUP", "campus bus BUP", "how students commute to BUP"],
+      "responses": ["BUP offers transport facilities including buses for students and campus vehicles. :contentReference[oaicite:22]{index=22}", "Would you like bus schedule or fees for transport?"]
+    },
+    {
+      "intent": "lab_facilities",
+      "text": ["laboratories at BUP", "labs in science & tech faculty", "computer lab BUP"],
+      "responses": ["In the Science & Technology faculty BUP has labs, computer facilities and ICT services to support programs like CSE and Environmental Science. :contentReference[oaicite:23]{index=23}", "Would you like details of a specific lab (e.g., CSE or ICE)?"]
+    },
+    {
+      "intent": "sports_clubs",
+      "text": ["sports at BUP", "athletics BUP", "clubs and societies BUP", "student clubs BUP"],
+      "responses": ["There are sports and clubs at BUP (debate, business forum, finance society etc.). :contentReference[oaicite:24]{index=24}", "Would you like a list of student clubs and how to join?"]
+    },
+    {
+      "intent": "student_life",
+      "text": ["student life at BUP", "what's student life like", "campus life BUP", "clubs at BUP", "extra curricular BUP"],
+      "responses": ["Student life at BUP is vibrant: besides academics there are clubs, sports and modern facilities in a disciplined campus environment. :contentReference[oaicite:25]{index=25}", "Do you want details about clubs, halls or extracurriculars at BUP?"]
+    },
+    {
+      "intent": "language_center",
+      "text": ["language courses BUP", "modern languages BUP", "Centre for Modern Languages BUP"],
+      "responses": ["BUP’s Centre for Modern Languages offers certificates in languages like Arabic, Chinese, Turkish, French. :contentReference[oaicite:26]{index=26}", "Would you like to know the next intake or fees for the language centre?"]
+    },
+    {
+      "intent": "campus_map",
+      "text": ["campus map BUP", "layout BUP campus", "where is hall BUP", "campus map BUP Mirpur"],
+      "responses": ["Campus map and building layout are available on BUP’s official site. Would you like the PDF/map link?", "Specific building directions can be provided for halls, labs or library if needed."]
+    },
+    {
+      "intent": "mode_of_instruction",
+      "text": ["language of instruction BUP", "medium of teaching BUP", "how is class conducted BUP"],
+      "responses": ["Classes at BUP are generally in English (especially in tech and business), though some programs include Bangla components. :contentReference[oaicite:27]{index=27}", "Would you like the medium of instruction for a specific program?"]
+    },
+    {
+      "intent": "grading_policy",
+      "text": ["grading policy BUP", "GPA BUP", "CGPA system BUP", "what is the grading at BUP"],
+      "responses": ["BUP generally uses CGPA system aligned with public universities in Bangladesh. :contentReference[oaicite:28]{index=28}", "Would you like the grade-to-letter conversion table or CGPA rules?"]
+    },
+    {
+      "intent": "academic_calendar",
+      "text": ["academic calendar BUP", "session timeline BUP", "semester dates BUP", "academic year BUP"],
+      "responses": ["The academic calendar and session details are published on BUP’s website. :contentReference[oaicite:29]{index=29}", "Would you like the current session and semester start dates for BUP?"]
+    },
+    {
+      "intent": "examination_system",
+      "text": ["exam system BUP", "how are exams at BUP", "grading system BUP", "evaluation BUP"],
+      "responses": ["Exams, grading and evaluation at BUP follow the University Grants Commission rules and internal regulations of BUP. :contentReference[oaicite:30]{index=30}", "Would you like information about the evaluation pattern for a specific program?"]
+    },
+    {
+      "intent": "internship_opportunities",
+      "text": ["internships at BUP", "does BUP offer internships", "placement BUP internships", "internship program BUP"],
+      "responses": ["Many departments at BUP encourage internships or practical training – especially in business and engineering programs. :contentReference[oaicite:31]{index=31}", "Would you like internship info for a specific department (e.g., CSE, Marketing)?"]
+    },
+    {
+      "intent": "placement_support",
+      "text": ["placement at BUP", "job placement support BUP", "does BUP have career centre", "career services BUP"],
+      "responses": ["BUP has a Counselling & Placement Centre to support students for careers and placements. :contentReference[oaicite:32]{index=32}", "Do you want the latest placement statistics for a program?"]
+    },
+    {
+      "intent": "industrial_linkage",
+      "text": ["industry partnerships BUP", "collaboration BUP industry", "corporate link BUP", "industry tie up BUP"],
+      "responses": ["BUP maintains linkages with industries and professional bodies – especially in business & tech faculties.", "Would you like examples of industry collaborations or partner organisations?"]
+    },
+    {
+      "intent": "international_students",
+      "text": ["international students BUP", "foreign students at BUP", "how can foreign student apply to BUP", "international admissions BUP"],
+      "responses": ["BUP welcomes international students; you may need equivalency and English proficiency depending on country. :contentReference[oaicite:33]{index=33}", "Would you like details for international admissions (fees, visa, accommodation)?"]
+    },
+    {
+      "intent": "distance_learning",
+      "text": ["distance learning BUP", "online course BUP", "blended learning BUP", "e-learning at BUP"],
+      "responses": ["Currently BUP focuses mainly on on-campus programmes. For online/blended delivery check specific department announcements.", "Would you like to know if a program is offered in blended/online mode?"]
+    },
+    {
+      "intent": "campus_events",
+      "text": ["events at BUP", "seminar BUP campus", "workshop BUP", "conference BUP", "campus activity BUP"],
+      "responses": ["BUP hosts seminars, workshops and conferences. For example a recent event was “Finance for Non-Finance Professionals”. :contentReference[oaicite:34]{index=34}", "Would you like the upcoming event schedule?"]
+    },
+    {
+      "intent": "campus_security",
+      "text": ["security at BUP", "is BUP safe", "campus safety BUP", "discipline BUP campus"],
+      "responses": ["BUP campus is known for a disciplined and secure environment, given its military-administration structure. :contentReference[oaicite:35]{index=35}", "Would you like to know rules/regulations about campus behaviour?"]
+    },
+    {
+      "intent": "ict_services",
+      "text": ["wifi at BUP", "internet access BUP", "network BUP campus", "ICT services BUP"],
+      "responses": ["BUP campus has WiFi & LAN services; the ICT Centre supports digitalisation of academic & admin operations. :contentReference[oaicite:36]{index=36}", "Would you like details about how to connect, policy or data speed?"]
+    },
+    {
+      "intent": "library_resources",
+      "text": ["online journals BUP", "library resources BUP", "books count BUP library", "library digital BUP"],
+      "responses": ["The library at BUP offers online journals and a growing book collection. :contentReference[oaicite:37]{index=37}", "Would you like library membership procedure or opening hours?"]
+    },
+    {
+      "intent": "health_services",
+      "text": ["medical centre BUP", "health services on campus BUP", "student health BUP", "clinic BUP"],
+      "responses": ["BUP provides medical and health services for students and staff on campus. :contentReference[oaicite:38]{index=38}", "Would you like the clinic timings or list of services?"]
+    },
+    {
+      "intent": "cafeteria_food",
+      "text": ["food at BUP", "cafeteria BUP", "dining services BUP", "canteen BUP"],
+      "responses": ["BUP has dining/cafeteria facilities like Vista Café and other food services. :contentReference[oaicite:39]{index=39}", "Would you like menu pricing or operating hours for the cafeteria?"]
+    },
+    {
+      "intent": "transport_schedule",
+      "text": ["bus schedule BUP", "shuttle BUP", "campus transport timing BUP", "how to get to BUP campus"],
+      "responses": ["Transport schedule for BUP is published on campus notice boards and the website. :contentReference[oaicite:40]{index=40}", "Would you like bus route numbers and stops for BUP?"]
+    },
+    {
+      "intent": "environment_sustainability",
+      "text": ["green campus BUP", "sustainability at BUP", "eco friendly BUP", "campus environment BUP"],
+      "responses": ["BUP campus is noted for a green landscape and a secure, tranquil location. :contentReference[oaicite:41]{index=41}", "Would you like info about BUP’s sustainability initiatives?"]
+    },
+    {
+      "intent": "new_programs",
+      "text": ["new programs BUP", "upcoming program BUP", "planned department BUP", "future courses BUP"],
+      "responses": ["BUP is expanding and introducing new programs steadily. :contentReference[oaicite:42]{index=42}", "Would you like a list of programs expected soon?"]
+    },
+    {
+      "intent": "student_clubs_list",
+      "text": ["list of clubs at BUP", "which clubs exist at BUP", "extra curricular organisations BUP", "student societies BUP"],
+      "responses": ["There are many student clubs at BUP: e.g., Finance Society, Business & Communication Club, HR & Leadership Club under the business faculty. :contentReference[oaicite:43]{index=43}", "Would you like club contact info or how to join?"]
+    },
+    {
+      "intent": "convocation_graduation",
+      "text": ["when is convocation at BUP", "graduation ceremony BUP", "convocation date BUP"],
+      "responses": ["The dates of BUP convocations are announced via the official site/notice board. Please check the ‘News & Notice’ section of BUP. :contentReference[oaicite:44]{index=44}", "Would you like previous year convocation details?"]
+    },
+    {
+  "intent": "military_affiliates",
+  "text": ["military institutes under BUP", "MIST", "AFMC", "BMA", "NDC", "which military colleges are under BUP"],
+  "responses": [
+    "BUP affiliates military institutes like MIST (Military Institute of Science & Technology), AFMC (Armed Forces Medical College), BMA (Bangladesh Military Academy), NDC (National Defence College), and more.",
+    "Would you like the full list of affiliated military and professional institutes?"
+  ]
+},
+{
+  "intent": "publications_media",
+  "text": ["BUP journals", "publications of BUP", "BUP newsletter", "press release BUP"],
+  "responses": [
+    "BUP publishes academic journals and newsletters through its Centre for Higher Studies & Research (CHSR) and other faculties.",
+    "Would you like a list of BUP’s journals or recent publication links?"
+  ]
+},
+{
+  "intent": "lms_system",
+  "text": ["does BUP use Moodle", "BUP LMS", "e-learning platform BUP"],
+  "responses": [
+    "BUP uses a Learning Management System (LMS) for online classes and resources — some departments use Moodle or custom portals.",
+    "Would you like the LMS login or access link?"
+  ]
+},
+{
+  "intent": "admin_offices",
+  "text": ["registrar office BUP", "exam controller BUP", "admin office BUP"],
+  "responses": [
+    "BUP has dedicated administrative offices like Registrar, Controller of Examinations, and Finance & Accounts for academic and administrative operations.",
+    "Would you like their contact emails or responsibilities listed?"
+  ]
+},
+{
+  "intent": "faculty_fsss_details",
+  "text": ["FSSS departments", "faculty of security and strategic studies BUP", "security studies BUP"],
+  "responses": [
+    "The Faculty of Security and Strategic Studies (FSSS) includes departments like International Relations, Peace & Conflict Studies, and Strategic Studies.",
+    "Would you like course details for any FSSS program?"
+  ]
+},
+{
+  "intent": "faculty_fms_details",
+  "text": ["FMS departments", "faculty of medical studies BUP", "medical faculty BUP"],
+  "responses": [
+    "The Faculty of Medical Studies (FMS) oversees programs related to Armed Forces Medical College (AFMC) and health sciences.",
+    "Would you like program or admission info for FMS?"
+  ]
+},
+{
+  "intent": "important_links",
+  "text": ["BUP admission portal", "research portal BUP", "alumni portal BUP", "apply online BUP"],
+  "responses": [
+    "Here are some useful links: Admission Portal – [admission.bup.edu.bd], Research Portal – [chsr.bup.edu.bd], Alumni – [alumni.bup.edu.bd].",
+    "Would you like official site links for notices or results?"
+  ]
+}
+
+
+
+
+
+
+  ]
+}
